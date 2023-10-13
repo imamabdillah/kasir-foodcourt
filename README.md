@@ -1,4 +1,5 @@
-<p align="center"><img src="https://github.com/imamabdillah/kasir-foodcourt/assets/92290516/8520fbb7-9028-4850-a6d3-3a9b39a4ec19"></p>
+<p align="center"><img src="https://github.com/imamabdillah/kasir-foodcourt/assets/92290516/4d8abd56-94af-4bb6-8e39-ccd55a75a185"></p>
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
