@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MenuController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('landingpage');
 });
-Route::get('/menu', function () {
-    return view('menu');
-});
+
+
+Route::get('/menu', 'MenuController@index')->name('menu.index');
+Route::get('/menu/create', 'MenuController@create')->name('menu.create');
+Route::post('/menu', 'MenuController@store')->name('menu.store');
