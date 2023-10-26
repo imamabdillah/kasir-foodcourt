@@ -23,10 +23,11 @@ class MenuController extends Controller
     {
         $request->validate([
             'nama' => 'required',
-            'harga' => 'required',
+            'harga' => 'required|numeric',
             'deskripsi' => 'required',
             'foto_produk' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
+
 
         $menu = new Menu();
         $menu->nama = $request->input('nama');
@@ -36,11 +37,14 @@ class MenuController extends Controller
         if ($request->hasFile('foto_produk')) {
             $image = $request->file('foto_produk');
             $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('images'), $imageName);
+            $image->move(storage_path('app/public'), $imageName);
             $menu->foto_produk = $imageName;
+
+            // dd($request->all());
         }
 
         $menu->save();
+
 
         return redirect()->route('menu.index')->with('success', 'Menu baru telah ditambahkan!');
     }
@@ -61,7 +65,7 @@ class MenuController extends Controller
     {
         $request->validate([
             'nama' => 'required',
-            'harga' => 'required',
+            'harga' => 'required|numeric',
             'deskripsi' => 'required',
             'foto_produk' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
