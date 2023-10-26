@@ -252,7 +252,7 @@
                                                                     <!--begin::Body-->
                                                                     <div class="card-body text-center">
                                                                         <!--begin::Food img-->
-                                                                        <img src="{{ asset('storage/' . $menu->foto_produk) }}"
+                                                                        <img src="{{ asset('storage/foto_produk/' . $menu->foto_produk) }}"
                                                                             alt="{{ $menu->nama }}"
                                                                             class="rounded-3 mb-4 w-150px h-150px w-xxl-200px h-xxl-200px"
                                                                             alt="" />

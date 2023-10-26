@@ -37,7 +37,7 @@ class MenuController extends Controller
         if ($request->hasFile('foto_produk')) {
             $image = $request->file('foto_produk');
             $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(storage_path('app/public'), $imageName);
+            $image->move(storage_path('app/public/foto_produk'), $imageName);
             $menu->foto_produk = $imageName;
 
             // dd($request->all());
