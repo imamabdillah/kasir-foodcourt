@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Menu extends Model
 {
-    protected $table = 'menus'; // Nama tabel dalam database
+    protected $table = 'menus';
 
     protected $fillable = [
         'nama',
@@ -16,7 +16,10 @@ class Menu extends Model
         'foto_produk',
     ];
 
-    // Tambahan metode atau relasi, jika diperlukan
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
     use HasFactory;
 }
-

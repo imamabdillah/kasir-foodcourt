@@ -123,7 +123,7 @@
                                                             <!--begin::Info-->
                                                             <div class="">
                                                                 <span
-                                                                    class="text-gray-800 fw-bold fs-2 d-block">Lunch</span>
+                                                                    class="text-gray-800 fw-bold fs-2 d-block">Makanan</span>
                                                                 <span class="text-gray-400 fw-semibold fs-7">8
                                                                     Options</span>
                                                             </div>
@@ -149,7 +149,7 @@
                                                             <!--begin::Info-->
                                                             <div class="">
                                                                 <span
-                                                                    class="text-gray-800 fw-bold fs-2 d-block">Salad</span>
+                                                                    class="text-gray-800 fw-bold fs-2 d-block">Minuman</span>
                                                                 <span class="text-gray-400 fw-semibold fs-7">14
                                                                     Salads</span>
                                                             </div>
@@ -159,7 +159,7 @@
                                                     </li>
                                                     <!--end::Item-->
                                                     <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-0">
+                                                    {{-- <li class="nav-item mb-3 me-0">
                                                         <!--begin::Nav link-->
                                                         <a class="nav-link nav-link-border-solid btn btn-outline btn-flex btn-active-color-primary flex-column flex-stack pt-9 pb-7 page-bg"
                                                             data-bs-toggle="pill" href="#kt_pos_food_content_3"
@@ -182,10 +182,10 @@
                                                             <!--end::Info-->
                                                         </a>
                                                         <!--end::Nav link-->
-                                                    </li>
+                                                    </li> --}}
                                                     <!--end::Item-->
                                                     <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-0">
+                                                    {{-- <li class="nav-item mb-3 me-0">
                                                         <!--begin::Nav link-->
                                                         <a class="nav-link nav-link-border-solid btn btn-outline btn-flex btn-active-color-primary flex-column flex-stack pt-9 pb-7 page-bg"
                                                             data-bs-toggle="pill" href="#kt_pos_food_content_4"
@@ -208,10 +208,10 @@
                                                             <!--end::Info-->
                                                         </a>
                                                         <!--end::Nav link-->
-                                                    </li>
+                                                    </li> --}}
                                                     <!--end::Item-->
                                                     <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-0">
+                                                    {{-- <li class="nav-item mb-3 me-0">
                                                         <!--begin::Nav link-->
                                                         <a class="nav-link nav-link-border-solid btn btn-outline btn-flex btn-active-color-primary flex-column flex-stack pt-9 pb-7 page-bg"
                                                             data-bs-toggle="pill" href="#kt_pos_food_content_5"
@@ -234,7 +234,7 @@
                                                             <!--end::Info-->
                                                         </a>
                                                         <!--end::Nav link-->
-                                                    </li>
+                                                    </li> --}}
                                                     <!--end::Item-->
                                                 </ul>
                                                 <!--end::Nav-->

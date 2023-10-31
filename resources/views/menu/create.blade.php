@@ -102,7 +102,40 @@
                                 <!--end::Card body-->
                             </div>
                             <!--end::Thumbnail settings-->
+                            <div class="card card-flush py-4">
+                                <!--begin::Card header-->
+                                <div class="card-header">
+                                    <!--begin::Card title-->
+                                    <div class="card-title">
+                                        <h2>Product Details</h2>
+                                    </div>
+                                    <!--end::Card title-->
+                                </div>
+                                <!--end::Card header-->
+                                <!--begin::Card body-->
+                                <div class="card-body pt-0">
+                                    <!--begin::Input group-->
+                                    <!--begin::Label-->
+                                    <label class="required form-label">Categories</label>
+                                    <!--end::Label-->
+                                    <!--begin::Select2-->
+                                    <select name="category_id" class="form-select form-select-solid form-select-lg mb-2"
+                                        data-control="select2">
+                                        @foreach ($categories as $category)
+                                            <option value="{{ $category->id }}">{{ $category->nama }}</option>
+                                        @endforeach
+                                    </select>
+                                    <!--end::Select2-->
+                                    <!--begin::Description-->
+                                    <div class="text-muted fs-7 mb-7">Select a category for the menu.</div>
+                                    <!--end::Description-->
+                                    <!--end::Input group-->
+                                    <!--begin::Button-->
+                                </div>
+                                <!--end::Card body-->
+                            </div>
                         </div>
+
                         <!--end::Aside column-->
                         <!--begin::Main column-->
                         <div class="d-flex flex-column flex-row-fluid gap-7 gap-lg-10">

@@ -25,7 +25,7 @@ Route::get('/', function () {
 Route::middleware(['guest'])->group(function () {
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
     Route::post('/login', [LoginController::class, 'login']);
-    Route::post('/logout', [LoginController::class])->name('logout');
+    Route::get('/logout', [LoginController::class])->name('logout');
 });
 
 Route::group(['middleware' => 'kasir'], function () {

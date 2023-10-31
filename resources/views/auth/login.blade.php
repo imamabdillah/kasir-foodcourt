@@ -4,25 +4,6 @@
 
 <body id="kt_body" class="app-blank">
     <!--begin::Theme mode setup on page load-->
-    <script>
-        var defaultThemeMode = "light";
-        var themeMode;
-        if (document.documentElement) {
-            if (document.documentElement.hasAttribute("data-bs-theme-mode")) {
-                themeMode = document.documentElement.getAttribute("data-bs-theme-mode");
-            } else {
-                if (localStorage.getItem("data-bs-theme") !== null) {
-                    themeMode = localStorage.getItem("data-bs-theme");
-                } else {
-                    themeMode = defaultThemeMode;
-                }
-            }
-            if (themeMode === "system") {
-                themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-            }
-            document.documentElement.setAttribute("data-bs-theme", themeMode);
-        }
-    </script>
     <!--end::Theme mode setup on page load-->
     <!--begin::Root-->
     <div class="d-flex flex-column flex-root" id="kt_app_root">
@@ -35,8 +16,8 @@
                     <!--begin::Wrapper-->
                     <div class="w-lg-500px p-10">
                         <!--begin::Form-->
-                        <form method="POST" action="{{ route('login') }}" class="form w-100" novalidate="novalidate"
-                            id="kt_sign_in_form" data-kt-redirect-url={{ route('menu.index') }} action="#">
+                        <form method="POST" class="form w-100" novalidate="novalidate" id="kt_sign_in_form"
+                            data-kt-redirect-url={{ route('menu.index') }} action="{{ route('login') }}">
                             @csrf
                             <!--begin::Heading-->
                             <div class="text-center mb-11">

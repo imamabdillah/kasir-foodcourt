@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -16,7 +17,8 @@ class MenuController extends Controller
     }
     public function create()
     {
-        return view('menu.create');
+        $categories = Category::all();
+        return view('menu.create', compact('categories'));
     }
 
     public function store(Request $request)
@@ -26,6 +28,7 @@ class MenuController extends Controller
             'harga' => 'required|numeric',
             'deskripsi' => 'required',
             'foto_produk' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            'category_id' => 'required',
         ]);
 
 
@@ -33,6 +36,7 @@ class MenuController extends Controller
         $menu->nama = $request->input('nama');
         $menu->harga = $request->input('harga');
         $menu->deskripsi = $request->input('deskripsi');
+        $menu->category_id = $request->input('category_id');
 
         if ($request->hasFile('foto_produk')) {
             $image = $request->file('foto_produk');
