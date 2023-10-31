@@ -2,28 +2,40 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+
 
 class LoginController extends Controller
 {
-    use AuthenticatesUsers;
-
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
-
     public function showLoginForm()
     {
-        return view('auth.login');
+        return view('auth.login'); // Tampilkan halaman login
     }
 
-    protected function authenticated(Request $request, $user)
+    public function login(Request $request)
     {
-        // Tindakan yang diambil setelah pengguna berhasil login
-        // Misalnya, Anda dapat mengarahkan pengguna ke halaman dashboard
-        return redirect()->intended(route('dashboard'));
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            // Jika login berhasil, alihkan pengguna ke halaman yang sesuai dengan peran (role) mereka
+            if (Auth::user()->role === 'admin') {
+                return redirect()->route('admin.dashboard');
+            } elseif (Auth::user()->role === 'owner') {
+                return redirect()->route('owner.dashboard');
+            } elseif (Auth::user()->role === 'kasir') {
+                return redirect()->route('menu.index');
+            }
+        }
+
+        // Jika login gagal, kembalikan ke halaman login dengan pesan error
+        return redirect()->route('login')->with('error', 'Login gagal. Silakan coba lagi.');
+    }
+
+    public function logout()
+    {
+        Auth::logout(); // Logout pengguna
+        return redirect()->route('login'); // Alihkan kembali ke halaman login
     }
 }
