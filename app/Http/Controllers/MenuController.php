@@ -13,8 +13,10 @@ class MenuController extends Controller
     public function index()
     {
         $menus = Menu::all();
-        return view('menu.index', compact('menus'));
+        $categories = Category::all();
+        return view('menu.index', compact('menus'), compact('categories'));
     }
+
     public function create()
     {
         $categories = Category::all();

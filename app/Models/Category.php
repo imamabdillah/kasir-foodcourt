@@ -11,6 +11,7 @@ class Category extends Model
 
     protected $fillable = [
         'nama',
+        'icon',
 
     ];
 
@@ -18,6 +19,10 @@ class Category extends Model
     public function menus()
     {
         return $this->hasMany(Menu::class); // Relasi "Category memiliki banyak Menu"
+    }
+    public function menuCount()
+    {
+        return $this->menus->count();
     }
 
     // Tambahan metode atau relasi, jika diperlukan

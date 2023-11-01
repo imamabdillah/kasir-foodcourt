@@ -104,186 +104,85 @@
                                             <!--begin::Body-->
                                             <div class="card-body">
                                                 <!--begin::Nav-->
-                                                <ul
-                                                    class="nav nav-pills d-flex justify-content-between nav-pills-custom gap-3 mb-6">
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-0">
-                                                        <!--begin::Nav link-->
-                                                        <a class="nav-link nav-link-border-solid btn btn-outline btn-flex btn-active-color-primary flex-column flex-stack pt-9 pb-7 page-bg show active"
-                                                            data-bs-toggle="pill" href="#kt_pos_food_content_1"
-                                                            style="width: 138px;height: 180px">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon mb-3">
-                                                                <!--begin::Food icon-->
-                                                                <img src="assets/media/svg/food-icons/spaghetti.svg"
-                                                                    class="w-50px" alt="" />
-                                                                <!--end::Food icon-->
-                                                            </div>
-                                                            <!--end::Icon-->
-                                                            <!--begin::Info-->
-                                                            <div class="">
-                                                                <span
-                                                                    class="text-gray-800 fw-bold fs-2 d-block">Makanan</span>
-                                                                <span class="text-gray-400 fw-semibold fs-7">8
-                                                                    Options</span>
-                                                            </div>
-                                                            <!--end::Info-->
-                                                        </a>
-                                                        <!--end::Nav link-->
-                                                    </li>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    <li class="nav-item mb-3 me-0">
-                                                        <!--begin::Nav link-->
-                                                        <a class="nav-link nav-link-border-solid btn btn-outline btn-flex btn-active-color-primary flex-column flex-stack pt-9 pb-7 page-bg"
-                                                            data-bs-toggle="pill" href="#kt_pos_food_content_2"
-                                                            style="width: 138px;height: 180px">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon mb-3">
-                                                                <!--begin::Food icon-->
-                                                                <img src="assets/media/svg/food-icons/salad.svg"
-                                                                    class="w-50px" alt="" />
-                                                                <!--end::Food icon-->
-                                                            </div>
-                                                            <!--end::Icon-->
-                                                            <!--begin::Info-->
-                                                            <div class="">
-                                                                <span
-                                                                    class="text-gray-800 fw-bold fs-2 d-block">Minuman</span>
-                                                                <span class="text-gray-400 fw-semibold fs-7">14
-                                                                    Salads</span>
-                                                            </div>
-                                                            <!--end::Info-->
-                                                        </a>
-                                                        <!--end::Nav link-->
-                                                    </li>
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    {{-- <li class="nav-item mb-3 me-0">
-                                                        <!--begin::Nav link-->
-                                                        <a class="nav-link nav-link-border-solid btn btn-outline btn-flex btn-active-color-primary flex-column flex-stack pt-9 pb-7 page-bg"
-                                                            data-bs-toggle="pill" href="#kt_pos_food_content_3"
-                                                            style="width: 138px;height: 180px">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon mb-3">
-                                                                <!--begin::Food icon-->
-                                                                <img src="assets/media/svg/food-icons/cheeseburger.svg"
-                                                                    class="w-50px" alt="" />
-                                                                <!--end::Food icon-->
-                                                            </div>
-                                                            <!--end::Icon-->
-                                                            <!--begin::Info-->
-                                                            <div class="">
-                                                                <span
-                                                                    class="text-gray-800 fw-bold fs-2 d-block">Burger</span>
-                                                                <span class="text-gray-400 fw-semibold fs-7">5
-                                                                    Burgers</span>
-                                                            </div>
-                                                            <!--end::Info-->
-                                                        </a>
-                                                        <!--end::Nav link-->
-                                                    </li> --}}
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    {{-- <li class="nav-item mb-3 me-0">
-                                                        <!--begin::Nav link-->
-                                                        <a class="nav-link nav-link-border-solid btn btn-outline btn-flex btn-active-color-primary flex-column flex-stack pt-9 pb-7 page-bg"
-                                                            data-bs-toggle="pill" href="#kt_pos_food_content_4"
-                                                            style="width: 138px;height: 180px">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon mb-3">
-                                                                <!--begin::Food icon-->
-                                                                <img src="assets/media/svg/food-icons/coffee.svg"
-                                                                    class="w-50px" alt="" />
-                                                                <!--end::Food icon-->
-                                                            </div>
-                                                            <!--end::Icon-->
-                                                            <!--begin::Info-->
-                                                            <div class="">
-                                                                <span
-                                                                    class="text-gray-800 fw-bold fs-2 d-block">Coffee</span>
-                                                                <span class="text-gray-400 fw-semibold fs-7">7
-                                                                    Beverages</span>
-                                                            </div>
-                                                            <!--end::Info-->
-                                                        </a>
-                                                        <!--end::Nav link-->
-                                                    </li> --}}
-                                                    <!--end::Item-->
-                                                    <!--begin::Item-->
-                                                    {{-- <li class="nav-item mb-3 me-0">
-                                                        <!--begin::Nav link-->
-                                                        <a class="nav-link nav-link-border-solid btn btn-outline btn-flex btn-active-color-primary flex-column flex-stack pt-9 pb-7 page-bg"
-                                                            data-bs-toggle="pill" href="#kt_pos_food_content_5"
-                                                            style="width: 138px;height: 180px">
-                                                            <!--begin::Icon-->
-                                                            <div class="nav-icon mb-3">
-                                                                <!--begin::Food icon-->
-                                                                <img src="assets/media/svg/food-icons/cheesecake.svg"
-                                                                    class="w-50px" alt="" />
-                                                                <!--end::Food icon-->
-                                                            </div>
-                                                            <!--end::Icon-->
-                                                            <!--begin::Info-->
-                                                            <div class="">
-                                                                <span
-                                                                    class="text-gray-800 fw-bold fs-2 d-block">Dessert</span>
-                                                                <span class="text-gray-400 fw-semibold fs-7">8
-                                                                    Desserts</span>
-                                                            </div>
-                                                            <!--end::Info-->
-                                                        </a>
-                                                        <!--end::Nav link-->
-                                                    </li> --}}
-                                                    <!--end::Item-->
+                                                <ul class="nav nav-pills d-flex nav-pills-custom gap-3 mb-6">
+                                                    @foreach ($categories as $category)
+                                                        <li class="nav-item mb-3 me-0">
+                                                            <a class="nav-link nav-link-border-solid btn btn-outline btn-flex btn-active-color-primary flex-column flex-stack pt-9 pb-7 page-bg
+                                                                @if ($category->id === 1) show active @endif"
+                                                                data-bs-toggle="pill"
+                                                                href="#kt_pos_food_content_{{ $category->id }}"
+                                                                style="width: 138px;height: 180px">
+
+                                                                <div class="nav-icon mb-3">
+                                                                    <img src="assets/media/svg/food-icons/{{ $category->icon }}"
+                                                                        class="w-50px" alt="{{ $category->nama }}" />
+                                                                </div>
+                                                                <div>
+                                                                    <span
+                                                                        class="text-gray-800 fw-bold fs-2 d-block">{{ $category->nama }}</span>
+                                                                    <span
+                                                                        class="text-gray-400 fw-semibold fs-7">{{ $category->menuCount() }}
+                                                                        Menu</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    @endforeach
                                                 </ul>
                                                 <!--end::Nav-->
                                                 <!--begin::Tab Content-->
                                                 <div class="tab-content">
-                                                    <!--begin::Tap pane-->
-                                                    <div class="tab-pane fade show active" id="kt_pos_food_content_1">
-                                                        <!--begin::Wrapper-->
-                                                        <div class="d-flex flex-wrap d-grid gap-5 gap-xxl-9">
+                                                    @foreach ($categories as $category)
+                                                        <!--begin::Tab pane-->
+                                                        <div class="tab-pane fade show @if ($category->id === 1) active @endif"
+                                                            id="kt_pos_food_content_{{ $category->id }}">
+                                                            <!--begin::Wrapper-->
+                                                            <div class="d-flex flex-wrap d-grid gap-5 gap-xxl-9">
 
-                                                            <!--begin::Card-->
-                                                            @foreach ($menus as $menu)
-                                                                <div
-                                                                    class="card card-flush flex-row-fluid p-6 pb-5 mw-100">
-                                                                    <!--begin::Body-->
-                                                                    <div class="card-body text-center">
-                                                                        <!--begin::Food img-->
-                                                                        <img src="{{ asset('storage/foto_produk/' . $menu->foto_produk) }}"
-                                                                            alt="{{ $menu->nama }}"
-                                                                            class="rounded-3 mb-4 w-150px h-150px w-xxl-200px h-xxl-200px"
-                                                                            alt="" />
+                                                                <!--begin::Card-->
+                                                                @foreach ($menus as $menu)
+                                                                    @if ($menu->category_id == $category->id)
+                                                                        <div
+                                                                            class="card card-flush flex-row-fluid p-6 pb-5 mw-100">
+                                                                            <!--begin::Body-->
+                                                                            <div class="card-body text-center">
+                                                                                <!--begin::Food img-->
+                                                                                <img src="{{ asset('storage/foto_produk/' . $menu->foto_produk) }}"
+                                                                                    alt="{{ $menu->nama }}"
+                                                                                    class="rounded-3 mb-4 w-150px h-150px w-xxl-200px h-xxl-200px"
+                                                                                    alt="" />
 
-                                                                        <!--end::Food img-->
-                                                                        <!--begin::Info-->
-                                                                        <div class="mb-2">
-                                                                            <!--begin::Title-->
-                                                                            <div class="text-center">
+                                                                                <!--end::Food img-->
+                                                                                <!--begin::Info-->
+                                                                                <div class="mb-2">
+                                                                                    <!--begin::Title-->
+                                                                                    <div class="text-center">
+                                                                                        <span
+                                                                                            class="fw-bold text-gray-800 cursor-pointer text-hover-primary fs-3 fs-xl-1">{{ $menu->nama }}</span>
+                                                                                        <span
+                                                                                            class="text-gray-400 fw-semibold d-block fs-6 mt-n1">{{ $menu->deskripsi }}</span>
+                                                                                    </div>
+                                                                                    <!--end::Title-->
+                                                                                </div>
+                                                                                <!--end::Info-->
+                                                                                <!--begin::Total-->
                                                                                 <span
-                                                                                    class="fw-bold text-gray-800 cursor-pointer text-hover-primary fs-3 fs-xl-1">{{ $menu->nama }}</span>
-                                                                                <span
-                                                                                    class="text-gray-400 fw-semibold d-block fs-6 mt-n1">{{ $menu->deskripsi }}</span>
+                                                                                    class="text-success text-end fw-bold fs-1">{{ 'Rp ' . number_format($menu->harga, 0, ',', '.') }}</span>
+                                                                                <!--end::Total-->
                                                                             </div>
-                                                                            <!--end::Title-->
+                                                                            <button>Tambah</button>
+                                                                            <!--end::Body-->
                                                                         </div>
-                                                                        <!--end::Info-->
-                                                                        <!--begin::Total-->
-                                                                        <span
-                                                                            class="text-success text-end fw-bold fs-1">{{ 'Rp ' . number_format($menu->harga, 0, ',', '.') }}</span>
-                                                                        <!--end::Total-->
-                                                                    </div>
-                                                                    <!--end::Body-->
-                                                                </div>
-                                                            @endforeach
-                                                            <!--end::Card-->
+                                                                    @endif
+                                                                @endforeach
+                                                                <!--end::Card-->
+
+                                                            </div>
+                                                            <!--end::Wrapper-->
                                                         </div>
-                                                        <!--end::Wrapper-->
-                                                    </div>
-                                                    <!--end::Tap pane-->
+                                                        <!--end::Tab pane-->
+                                                    @endforeach
                                                 </div>
+
                                                 <!--end::Tab Content-->
                                             </div>
                                             <!--end: Card Body-->
