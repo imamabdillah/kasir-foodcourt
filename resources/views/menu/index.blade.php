@@ -169,7 +169,7 @@
                                                                                     class="text-success text-end fw-bold fs-1">{{ 'Rp ' . number_format($menu->harga, 0, ',', '.') }}</span>
                                                                                 <!--end::Total-->
                                                                             </div>
-                                                                            <button>Tambah</button>
+                                                                            {{-- <button>Tambah</button> --}}
                                                                             <!--end::Body-->
                                                                         </div>
                                                                     @endif
@@ -191,7 +191,7 @@
                                     </div>
                                     <!--end::Content-->
                                     <!--begin::Cart-->
-                                    @include('nav.cart')
+                                    @include('menu.cart')
                                     <!--end::Cart-->
                                 </div>
                                 <!--end::Layout-->
